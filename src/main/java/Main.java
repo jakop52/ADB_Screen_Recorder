@@ -8,7 +8,7 @@ public class Main {
 
         scrcpyScreenRecorder.startRecording();
 
-        Thread.sleep(1*1000*60);
+        Thread.sleep(2*1000*60);
 
         scrcpyScreenRecorder.stopRecording();
     }
