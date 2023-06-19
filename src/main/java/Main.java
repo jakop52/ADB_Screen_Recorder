@@ -1,12 +1,15 @@
 import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) throws IOException, InterruptedException, IOException {
-        AdbScreenRecorder recorder = new AdbScreenRecorder("output.mp4", 720, 1280, 30);
-        recorder.startRecording();
+    public static void main(String[] args) throws Exception {
+        //System.setProperty("java.library.path", "/usr/local/lib");
 
-        Thread.sleep(10000); // na przykład, nagrywa przez 10 sekund
+        ScrcpyScreenRecorder scrcpyScreenRecorder = new ScrcpyScreenRecorder();
 
-        recorder.stopRecording();
+        scrcpyScreenRecorder.startRecording();
+
+        Thread.sleep(1*1000*60);
+
+        scrcpyScreenRecorder.stopRecording();
     }
 }

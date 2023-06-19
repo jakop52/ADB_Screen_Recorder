@@ -15,12 +15,30 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.bytedeco/javacpp -->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacpp</artifactId>
+            <version>1.5.9</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.bytedeco/javacv -->
         <dependency>
             <groupId>org.bytedeco</groupId>
             <artifactId>javacv</artifactId>
             <version>1.5.9</version>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/org.bytedeco/javacv-platform -->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacv-platform</artifactId>
+            <version>1.5.9</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.bytedeco/ffmpeg-platform -->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>ffmpeg-platform</artifactId>
+            <version>6.0-1.5.9</version>
+        </dependency>
     </dependencies>
 
 </project>
